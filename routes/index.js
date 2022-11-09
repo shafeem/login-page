@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
   }
   else{
-    res.render("index",{"mess":req.session.loginErr})
+    res.render("index",{mess:req.session.loginErr})
 
     req.session.loginErr=false;
   }

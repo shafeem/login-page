@@ -29,7 +29,7 @@
 
                 <div class="form-group pt-3 text-light">
                     <label for="pw">Password</label>
-                    {{#if mess}}
+                    {{!-- {{#if mess}}
                      
                     <script>
                         window.alert("wrong password or email")
@@ -38,9 +38,12 @@
                     <input type="password" class="form-control " name="password" id="pw" placeholder="password" style="opacity: 0.6;">
                     {{else}}
                     <input type="password" class="form-control" name="password" id="pw" placeholder="password" style="opacity: 0.6;">
-                    {{/if}}
+                    {{/if}} --}}
                 </div>
-
+                <input type="password" class="form-control" name="password" id="pw" placeholder="password" style="opacity: 0.6;">
+                {{#if mess}}
+                <p class="text-warning h3 ">password or email is error</p>
+                {{/if}} 
 
                 <button type="submit" class="btn btn-primary mt-3">Submit</button>
             </form>
